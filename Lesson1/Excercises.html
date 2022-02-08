@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// Exercise 1
+
+let Tc = +prompt("Введите температуру по цельсию");
+let Tf = (9/5)*Tc+32;
+
+alert("Температура по Фаренгейту: " + Tf);
+
+// Exercise 2
+
+
+let name = "Василий";
+let admin = name;
+
+alert(admin);
+
+// Exersise 3
+
+let a = 10 + 10 + "10";
+let b = 10 + "10" + 10;
+let c = 10 + 10 +  + "10";
+let d = 10 / -"";
+let e = 10 / +"2,5";
+
+alert (a); // Ответ 2010 т.к. 10 + 10 = 20 и склеивается с 10 >>> 2010
+alert (b); // Ответ 101010 т.к. конкатенцаия 3-х значений
+alert (c); // Ответ 30 т.к. 10 + 10 = 20 + 10 (число, т.к. унарный плюс)
+alert (d); // -Infinity т.к. делим на -0
+alert (e); // NaN т.к. сначала пытается унарный плюс превратить в число, но т.к. не точка, а запятая, то число делиться на тсроку >>> NaN 
+
+</script>
+
+</body>
+</html>
