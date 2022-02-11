@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+</head>
+<body>
+    <script>
+        //N1
+        
+/*         let a = 1, b = 1, c, d;
+        c = ++a;
+        alert (c); // Ответ: 2 Т.к. перед а префиксный инкримент >>> прибавляет + 1
+
+        d = b++;
+        alert (d); // Ответ: 1 Т.к. постфиксный инкримент, сначала отображает занчение переменной = 1, а при следующем обращении увеличиться на 1
+
+        c = 2 + ++a;
+        alert (c); // Ответ: 5 Т.к. в данном случае переменная "а" вызывается  третий раз с префиксным инкриментом. До этого было 2, сейчас а = 3.
+
+        d = 2 + b++;
+        alert (d); // Ответ: 4 Т.к. у b постфиксный инкремент, до этого когда вызывали переменная увеличилась на 1, стала = 2, в данном случае подставляется 2, при следующем обращении к переменной она будет = 3
+
+        alert (a); // Ответ: 3 Мы обращались к переменной "а" 2 раза с префиксныминкрементом ,увеличивая каждыйы раз значение на 1. Соответсвенно а = 3
+        alert (b); // Ответ: 3  Объяснения на 3 строки выше. */
+
+        //№2
+
+        let a = 2; // Переменной a присваевается числовое значение 2
+        let x = 1 + (a*=2); // Сперва выполняется выражение в скобках с совмещенным оператором *= итого 2*2 = 4 и + 1 = 5. Таким образом, "а" = 4, а "х" = 5. 
+
+        //№3
+
+        let a1 = 20;
+        let b1 = 35;
+
+        if (a1 > 0 && b1 > 0) {
+            alert (a1 - b1);
+        } if (a1 < 0 && b1 < 0) {
+            alert (a1 * b1);
+        } if ((a1 < 0 && b1 > 0) || (a1 > 0 && b1 < 0)) {
+            alert (a1 + b1)
+        }
+
+        //N4
+        function add (a2, b2) {
+            return a2 + b2;
+        }
+
+        function sub (a2, b2) {
+            return a2 - b2;
+        }
+
+        function mult (a2, b2) {
+            return a2 * b2;
+        }
+
+        function divis (a2, b2) {
+            return a2 / b2;
+        }
+
+        //№5
+
+        function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case "+":
+            return add (arg1, arg2);
+        case "-":
+            return sub (arg1, arg2);
+        case "/":
+            return divis (arg1, arg2);
+        case "*":
+            return mult (arg1, arg2);
+        default:
+            throw new Error("Операция " + operation + " не предусмотрена");
+    }
+}
+    </script>
+    
+</body>
+</html>
